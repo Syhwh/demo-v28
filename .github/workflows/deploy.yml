@@ -15,7 +15,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps: 
-        - name: 'hello world'
-          run: echo 'hello world from github actions'
+        - name: 'checkout code'
+          uses: actions/checkout@v4
         - name: 'list files'
           run: ls -al
