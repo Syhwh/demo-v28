@@ -9,7 +9,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './tests/setup.ts',
     coverage: {
-      enabled: true,
+      enabled: false,
       reporter: ['html'],
     },
   },
