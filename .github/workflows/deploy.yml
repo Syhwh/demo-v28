@@ -1,0 +1,19 @@
+# name
+# on -> event
+# jobs -> job
+# runner -> os
+# steps -> step
+# uses -> action
+
+name: My CI/CD Pipeline
+
+on:
+  push: 
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps: 
+        - name: 'hello world'
+          run: echo 'hello world from github actions'
